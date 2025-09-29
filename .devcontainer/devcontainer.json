@@ -1,0 +1,23 @@
+{
+  "name": "demo-project",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "onCreateCommand": "npm ci",
+  "remoteUser": "node",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+  "mounts": ["type=volume,target=/workspace/node_modules", "type=volume,target=/workspace/dist"],
+  "workspaceFolder": "/workspace",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "Vue.volar",
+        "vitest.explorer",
+        "ms-playwright.playwright",
+        "dbaeumer.vscode-eslint",
+        "EditorConfig.EditorConfig",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  }
+}
