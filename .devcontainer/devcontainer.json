@@ -6,7 +6,12 @@
   "onCreateCommand": "npm ci",
   "remoteUser": "node",
   "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
-  "mounts": ["type=volume,target=/workspace/node_modules", "type=volume,target=/workspace/dist"],
+  "mounts": [
+    "type=volume,target=/workspace/node_modules",
+    "type=volume,target=/workspace/dist",
+    "type=volume,source=profile,target=/home/node",
+    "type=volume,target=/home/node/.vscode-server"
+  ],
   "workspaceFolder": "/workspace",
   "customizations": {
     "vscode": {
