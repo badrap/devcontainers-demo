@@ -4,7 +4,7 @@ This is a repository demonstrating devcontainer based development with Vue 3 and
 
 - Devcontainer configuration in [.devcontainer](./.devcontainer) subdirectory. For more information about devcontainers, see [Developing inside a Container](https://code.visualstudio.com/docs/devcontainers/containers).
 - A custom [`Dockerfile`](.devcontainer/Dockerfile). Another option is to use [pre-built devcontainer images](https://github.com/devcontainers/images).
-- The local profile directory is persisted between container rebuilds.
+- The local profile directory is persisted between container rebuilds. Handy with e.g. Claude Code!
 - Local Chromium installed inside the container for end-to-end testing.
 - `.npmrc` file that disables install scripts with `ignore-scripts=true`.
 
